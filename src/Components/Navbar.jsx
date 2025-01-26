@@ -1,8 +1,6 @@
-import text from "../assets/logo/text.svg";
-import truck from "../assets/logo/truck.svg";
+import logo_saylaniwelfare1 from "../assets/logo/logo_saylaniwelfare1.svg";
+import logo_saylaniwelfare from "../assets/logo/logo_saylaniwelfare.svg";
 import { CiSearch } from "react-icons/ci";
-import { IoMdHeart } from "react-icons/io";
-import { IoCart } from "react-icons/io5";
 import { BiUser } from "react-icons/bi";
 import { IoMenu } from "react-icons/io5";
 import { IoCloseCircleOutline } from "react-icons/io5";
@@ -50,21 +48,16 @@ export default function Navbar() {
       } gap-5 h-20 sm:h-28 transition-colors duration-300 shadow-md relative flex justify-between items-center px-4 sm:px-8`}
     >
       {/* Logo */}
-      <Link to={"/"}>
-        <img
-          src={text}
-          className="hidden md:block w-48 sm:w-72"
-          alt="Text Logo"
-        />
-      </Link>
+     
 
       <Link to={"/"}>
-        <img
-          src={truck}
-          className="block md:hidden w-[75px] sm:w-[95px]"
-          alt="Truck Logo"
-        />
+      <img
+       src={logo_saylaniwelfare}
+       className="w-[90px] sm:w-[120px] md:w-96"
+       alt="logo_saylaniwelfare Logo"
+       />
       </Link>
+
 
       {/* Search Box */}
       <form
@@ -149,8 +142,7 @@ export default function Navbar() {
         </button>
         {isLoggedIn ? (
           <>
-            <IoMdHeart />
-            <IoCart />
+            
           </>
         ) : null}
         <Link

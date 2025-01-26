@@ -9,12 +9,12 @@ export default function Banner() {
         <div className=" flex mx-2 md:mx-0 lg:mx-[92px] gap-2 sm:gap-4 md:gap-10 xl:gap-0 max-w-[1280px]">
           <div className=" text-gray-50  flex  items-center text-xs md:text-sm gap-2 xl:mr-52">
             <p className="hidden sm:flex">
-              Summer Sale For All Swim Suits And Free Express Delivery - OFF
-              50%!
+            Welcome to the&nbsp;<span className="text-[#8dc63f]">Saylani </span>&nbsp;Welfare
+            Non Governmental Organization in Pakistan
             </p>
 
-            <span className="font-semibold hover:text-primary  transition-colors duration-300 hover:cursor-pointer hidden sm:flex">
-              <a href=""> ShopNow</a>
+            <span className="font-semibold hover:text-[#8dc63f]  transition-colors duration-300 hover:cursor-pointer hidden sm:flex">
+              <a href=""> Donate Now</a>
             </span>
           </div>
           <div className=" hidden sm:flex">
@@ -34,12 +34,13 @@ export default function Banner() {
           width="100%"
           vspace="px"
         >
-          Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+          Welcome to the <span className="text-[#8dc63f]">Saylani</span> Welfare
+          Non Governmental Organization in Pakistan
         </marquee>
 
         <div className=" flex text-center items-center justify-evenly pb-1">
-          <p className="font-semibold hover:text-primary hover:underline hover:cursor-pointer  text-white text-[11px] ">
-            ShopNow
+          <p className="font-semibold transition-colors duration-300 hover:text-[#8dc63f] hover:underline hover:cursor-pointer  text-white text-[11px] ">
+            Donate Now
           </p>
           <select className="bg-slate-950  hover:cursor-pointer text-[11px] ">
             <option>English</option>
