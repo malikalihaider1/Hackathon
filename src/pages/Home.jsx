@@ -17,26 +17,46 @@ export default function Home() {
       }`}
     >
       <div className={`text-center ${darkMode ? "dark" : ""}`}>
-        <img
-          src={img4}
-          alt="Saylani Welfare Trust"
-          className="w-full  h-auto max-w-xl"
-        />
-        <div className="mt-6 px-4">
-          <h2 className="text-2xl font-semibold text-green-400 dark:text-green">
-            Welcome to the Saylani Welfare
-          </h2>
-          <p className="text-lg text-green-400 dark:text-green-400 mt-4">
-            Non Governmental Organization in Pakistan
-          </p>
-          <p className="text-lg text-green-400 dark:text-green-400 mt-2">
-            The largest NGO offering free daily Meals, Saylani Welfare is on the
-            ground and already working with local communities to assess how best
-            to support underprivileged families in more than 63 areas of day to
-            day lives.
-          </p>
-        </div>
-      </div>
+  <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6">
+    <img
+      src={img4}
+      alt="Saylani Welfare Trust"
+      className="w-full h-auto max-w-xl"
+    />
+    <div className="text-center max-w-lg px-4">
+      <h1 className="text-3xl font-bold text-black dark:text-black mb-4">
+        Empowering Communities, Transforming Lives
+      </h1>
+      <p className="text-lg text-gray-700 dark:text-black mb-6">
+        <span className="text-[#8dc63f]">Saylani</span> Welfare Trust is one of the largest Non-Governmental
+        Organizations in Pakistan, committed to providing free meals to
+        those in need. With a network of over 63 locations, Saylani works
+        tirelessly to support underprivileged families, focusing on daily
+        sustenance, health, education, and more.
+      </p>
+      <p className="text-md text-gray-600 dark:text-gray-400">
+        Join us in our mission to uplift the less fortunate and build a
+        stronger community for all. Your support can make a difference!
+      </p>
+    </div>
+  </div>
+
+  <div className="mt-6 px-4">
+    <h2 className="text-2xl font-semibold text-green-400 dark:text-green">
+      Welcome to the Saylani Welfare
+    </h2>
+    <p className="text-lg text-black dark:text-black mt-4">
+      Non Governmental Organization in Pakistan
+    </p>
+    <p className="text-lg text-black dark:text-black mt-2">
+      The largest NGO offering free daily Meals, Saylani Welfare is on the
+      ground and already working with local communities to assess how best
+      to support underprivileged families in more than 63 areas of day to
+      day lives.
+    </p>
+  </div>
+</div>
+
 
       <Link
         to={"/products"}
