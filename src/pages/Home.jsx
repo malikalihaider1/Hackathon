@@ -1,6 +1,6 @@
 import Button from "../Components/Button";
 import NewArrivalGrid from "../Components/NewArrivalGrid";
-import img4 from "../assets/images/home-image.png"
+import img4 from "../assets/images/home-image.png";
 import { FaArrowUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import useProducts from "../hooks/useProducts";
@@ -12,29 +12,31 @@ export default function Home() {
   const darkMode = useSelector((state) => state.darkMode.darkMode);
   return (
     <div
-      className={`container-x transition-colors duration-300 ${darkMode ? "bg-slate-700" : ""}`}
-     >
-      
+      className={`container-x transition-colors duration-300 ${
+        darkMode ? "bg-slate-700" : ""
+      }`}
+    >
       <div className={`text-center ${darkMode ? "dark" : ""}`}>
-  <img 
-    src={img4} 
-    alt="Saylani Welfare Trust" 
-    className="w-full h-auto max-w-xl"
-  />
-  <div className="mt-6 px-4">
-    <h2 className="text-2xl font-semibold text-green-400 dark:text-green">Welcome to the Saylani Welfare</h2>
-    <p className="text-lg text-green-400 dark:text-green-400 mt-4">
-      Non Governmental Organization in Pakistan
-    </p>
-    <p className="text-lg text-green-400 dark:text-green-400 mt-2">
-      The largest NGO offering free daily Meals, Saylani Welfare is on the ground and already working with local communities to assess how best to support underprivileged families in more than 63 areas of day to day lives.
-    </p>
-  </div>
-</div>
-
-
-
-    
+        <img
+          src={img4}
+          alt="Saylani Welfare Trust"
+          className="w-full  h-auto max-w-xl"
+        />
+        <div className="mt-6 px-4">
+          <h2 className="text-2xl font-semibold text-green-400 dark:text-green">
+            Welcome to the Saylani Welfare
+          </h2>
+          <p className="text-lg text-green-400 dark:text-green-400 mt-4">
+            Non Governmental Organization in Pakistan
+          </p>
+          <p className="text-lg text-green-400 dark:text-green-400 mt-2">
+            The largest NGO offering free daily Meals, Saylani Welfare is on the
+            ground and already working with local communities to assess how best
+            to support underprivileged families in more than 63 areas of day to
+            day lives.
+          </p>
+        </div>
+      </div>
 
       <Link
         to={"/products"}
@@ -43,15 +45,13 @@ export default function Home() {
         View All Category
       </Link>
 
-
-
- 
-
       <div className="flex  justify-between my-16">
         <h3 className={`heading ${darkMode ? "text-white" : ""}`}>
-        What We Are Doing
+          What We Are Doing
         </h3>
-        <Button className="h-14 bg-[#8dc63f] w-40">View All</Button>
+        <Button className="h-14 bg-[#8dc63f] w-40 hover:bg-[#7aaf33] text-white rounded-lg">
+          View All
+        </Button>
       </div>
       <div className="flex gap-7">
         {isLoading ? (
@@ -59,7 +59,6 @@ export default function Home() {
         ) : (
           ""
         )}
-        
       </div>
       <div className="flex gap-7">
         {isLoading ? (
@@ -67,7 +66,6 @@ export default function Home() {
         ) : (
           ""
         )}
-        
       </div>
 
       <NewArrivalGrid />
